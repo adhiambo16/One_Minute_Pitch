@@ -8,3 +8,17 @@ class User(db.Model):
 
     def __repr__(self):
         return f'User {self.username}'
+
+
+class Pitch(db.Model):
+    __tablename__ = 'pitches' 
+    id = db.Column(db.Integer,primary_key = True) 
+    pitch_category = db.Column(db.string(255)) 
+
+class Comment(db.Model):
+    __tablename__ = 'comments' 
+    id = db.Column(db.Integer,primary_key = True)
+    pitch_content = db,string())
+
+    
+

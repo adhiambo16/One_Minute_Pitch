@@ -1,5 +1,5 @@
-# [PitchIt](https://pitching.herokuapp.com/)
-## Pitch It is a web application that is meant for users to add pitches on  different categories
+# [One-Minute-Pitch](https://pitching.herokuapp.com/)
+## Pitch is a web application that is meant for users to add pitches on  different categories
 ###  6/29/2018
 #### By **[Lydia]**
 
@@ -19,8 +19,6 @@ A user can select any of the categories from the navbar to view the pitches on t
 
 Other users can give feedback to the pitch posts by commenting, liking or disliking the pitch. 
 
-
-## Set-up and Installation
 
 ### Prerequiites
     - Python 3.6

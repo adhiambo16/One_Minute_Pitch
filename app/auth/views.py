@@ -1,9 +1,11 @@
-from flask import render_template,redirect,url_for
-from flask_login import login_user,logout_user,login_required
-from . import auth
-from .forms import RegistrationForm
+from flask import render_template, redirect, url_for, flash, request
 from ..models import User
+from ..email import send_email, send_reset_email
+from . import auth
+from flask_login import login_user, login_required, logout_user, current_user
 from .. import db
+from .forms import RegistrationForm, LoginForm, ResetPassword, NewPassword
+import os
 
 @auth.route('/login',methods = ['GET','POST'])
 def login():

@@ -1,6 +1,3 @@
-# from flask import Flask
-
-# def create_app(config_name):
-
-#     app = Flask(__name__)
-#     return app
+from flask import Blueprint
+main = Blueprint('main',__name__)
+from . import views, errors, forms

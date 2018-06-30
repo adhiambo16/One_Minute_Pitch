@@ -42,7 +42,7 @@ Install dependancies that will create an environment for the app to run
 
 ### Prepare environment variables
 ```bash
-export DATABASE_URL='postgresql+psycopg2://username:password@localhost/pitchit'
+export DATABASE_URL='postgresql+psycopg2://username:password@localhost/oneminutepitch'
 export SECRET_KEY='Your secret key'
 ```
 

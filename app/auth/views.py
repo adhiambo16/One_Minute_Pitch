@@ -34,7 +34,10 @@ def register():
         db.session.commit()
 
         # mail_message('Welcome to Watchlist', 'email/welcome_user', user.email, user=user)
-        send_email(subject="Registration", sender=os.environ.get('MAIL_USERNAME'),recepients=[user.email],text_body='Test Email',html_body=render_template('500.html'))
+        try:
+            send_email(subject="Registration", sender=os.environ.get('MAIL_USERNAME'),recepients=[user.email],text_body='Test Email',html_body=render_template('500.html'))
+        except:
+            pass
 
         return redirect(url_for('auth.login'))
     

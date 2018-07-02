@@ -1,4 +1,4 @@
-#!/home/moringa/Documents/One-Minute-Pitch/virtual/bin/python3.6
+#!/home/moringa/Documents/One-Minute-Pitch/virtual/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'Mako==1.0.7','console_scripts','mako-render'
 __requires__ = 'Mako==1.0.7'
 import re
